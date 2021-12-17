@@ -22,13 +22,13 @@ class ProdukComputer extends Migration
                 'type'           => 'VARCHAR', 'contraint' => 30,
                 'null'           => false
             ],
-            'spesifikasi' => [
+            'ram' => [
                 'type'           => 'VARCHAR', 'contraint' =>100,
                 'null'           => false
             ],
-            'stok' => [
+            'processor' => [
                 'type'           => 'VARCHAR', 'contraint' => 15,
-                'null'           => true
+                'null'           => false
             ],
             'harga' => [
                 'type'           => 'VARCHAR', 'contraint' => 15,
