@@ -6,37 +6,33 @@ use CodeIgniter\Model;
 
 class ComputerModel extends Model
 {
-    protected $DBGroup          = 'default';
-    protected $table            = 'computers';
+    protected $DBGroup          = 'WebProgramming';
+    protected $table            = 'ProdukComputer';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nama_merek', 'warna', 'ram', 'processor', 'harga' ];
 
-    // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+        /**
+     * method untuk cek computer dari table daftar computer 
+     * berdasarkan nama,warna,spesifikasi,stok,gambar,harga
+     * @var String $nama
+     * @var String $warna
+     * @var String $ram
+     * @var String $processer
+     * @var string $harga
+     *
+     */
+    public function cekComputer($nama, $warna, $ram, $processor, $harga)
+    {
+        return $this->where('nama_merk', $nama)
+                    ->where('warna', $warna)
+                    ->where('ram', $ram)
+                    ->where('processor', $processor)
+                    ->where('harga', $harga);
+    }
 
-    // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
-    protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
-
-    // Callbacks
-    protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
-    protected $afterUpdate    = [];
-    protected $beforeFind     = [];
-    protected $afterFind      = [];
-    protected $beforeDelete   = [];
-    protected $afterDelete    = [];
 }

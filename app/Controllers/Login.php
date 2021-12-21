@@ -31,7 +31,7 @@ class Login extends BaseController{
             return redirect()->to('/login');
         }else{
 
-            $vl = (new PenggunaModel_12200144())->cekLogin($email, $sandi);
+            $vl = (new PenggunaModel())->cekLogin($email, $sandi);
             
             if($vl == null){
                 return redirect()->to('/login')->with(' error', 'User dan sandi salah');

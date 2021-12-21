@@ -23,7 +23,7 @@ class ProdukComputer extends Migration
                 'null'           => false
             ],
             'ram' => [
-                'type'           => 'VARCHAR', 'contraint' =>100,
+                'type'           => 'VARCHAR', 'contraint' =>20,
                 'null'           => false
             ],
             'processor' => [

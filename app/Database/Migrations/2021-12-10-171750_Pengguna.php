@@ -14,7 +14,7 @@ class Pengguna extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true
             ],
-            'email' => [
+            'nama' => [
                 'type'           => 'VARCHAR', 'constraint' => 50,
                 'null'           => false
             ],
@@ -24,12 +24,12 @@ class Pengguna extends Migration
             ]
             ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('Pengguna');
+        $this->forge->createTable('pengguna');
 
     }
 
     public function down()
     {
-        $this->forge->dropTable('Pengguna');
+        $this->forge->dropTable('pengguna');
     }
 }
