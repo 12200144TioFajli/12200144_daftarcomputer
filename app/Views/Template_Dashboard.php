@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/2.png">
+    <title>Daftar Computer - Website Daftar Computer</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->
     <link href="<?=base_url('/assets/node_modules/morrisjs/morris.css')?>" rel="stylesheet">
@@ -35,7 +35,7 @@
     <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label">Sisfo Perpustakaan</p>
+            <p class="loader__label">Daftar Computer</p>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -44,7 +44,7 @@
     <div id="main-wrapper">
        <?=$this->include('widget/topbar')?>
        <?=$this->include('widget/sidebar')?>
-      
+
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -53,7 +53,7 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                
+               
               <?=$this->renderSection('konten')?>
 
             </div>
@@ -68,7 +68,7 @@
         <!-- footer -->
         <!-- ============================================================== -->
         <footer class="footer">
-            © 2018 Eliteadmin by themedesigner.in
+            © 2021 Daftar Computer
         </footer>
         <!-- ============================================================== -->
         <!-- End footer -->
@@ -82,16 +82,16 @@
     <!-- ============================================================== -->
     <script src="<?=base_url('/assets/node_modules/jquery/jquery-3.2.1.min.js')?>"></script>
     <!-- Bootstrap popper Core JavaScript -->
-    <script src="<?=base_url('/assets/node_modules/popper/popper.min.js')?>"></script>
+    <script src=".<?=base_url('/assets/node_modules/popper/popper.min.js')?>"></script>
     <script src="<?=base_url('/assets/node_modules/bootstrap/dist/js/bootstrap.min.js')?>"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="<?=base_url('/dist/js/perfect-scrollbar.jquery.min.js')?>"></script>
     <!--Wave Effects -->
-    <script src="<?=base_url('dist/js/waves.js')?>"></script>
+    <script src="<?=base_url('/dist/js/waves.js')?>"></script>
     <!--Menu sidebar -->
-    <script src="<?=base_url('dist/js/sidebarmenu.js')?>"></script>
+    <script src="<?=base_url('/dist/js/sidebarmenu.js')?>"></script>
     <!--Custom JavaScript -->
-    <script src="<?=base_url('dist/js/custom.min.js')?>"></script>
+    <script src="<?=base_url('/dist/js/custom.min.js')?>"></script>
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
@@ -101,9 +101,10 @@
     <script src="<?=base_url('/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js')?>"></script>
     <!-- Popup message jquery -->
     <script src="<?=base_url('/assets/node_modules/toast-master/js/jquery.toast.js')?>"></script>
-    <!-- Chart JS -->
+    <!-- jQuery peity -->
+    <script src="<?=base_url('/assets/node_modules/peity/jquery.peity.min.js')?>"></script>
+    <script src="<?=base_url('/assets/node_modules/peity/jquery.peity.init.js')?>"></script>
     <script src="<?=base_url('/dist/js/dashboard1.js')?>"></script>
-    <script src="<?=base_url('/assets/node_modules/toast-master/js/jquery.toast.js')?>"></script>
 </body>
 
 </html>

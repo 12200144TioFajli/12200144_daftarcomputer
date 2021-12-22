@@ -10,7 +10,6 @@ class PenggunaModel extends Model
     protected $table            = 'pengguna';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $protectFields    = true;
     protected $allowedFields    = ['nama', 'password', ];

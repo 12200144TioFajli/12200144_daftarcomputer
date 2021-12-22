@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url('/assets/images/favicon1.png')?>">
     <title><?=($title ?? '')?></title>
     
     <!-- page css -->
@@ -28,9 +28,9 @@
 
 <body>
 
-     <?=$this->renderSection('isiweb')?>
+    <?=$this->renderSection('WebProgramming');?>
 
-   <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->

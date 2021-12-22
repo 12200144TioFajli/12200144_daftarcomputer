@@ -35,8 +35,8 @@
                     <ul class="list-group list-group-flush">
                     <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
                         <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">Spesifikasi laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Stok yang tersedia : <?=$processor?></li>
+                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
+                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
                         <li class="list-group-item">Harga laptop :  <?=$harga?></li>                   
                     </ul>
                 </div>
@@ -49,11 +49,11 @@
                 <div class="card-body">
                 <h5 class="card-title text-center">Card title</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
+                    <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
                         <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">Spesifikasi laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Stok yang tersedia : <?=$processor?></li>
-                        <li class="list-group-item">Harga laptop :  <?=$harga?></li>
+                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
+                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
+                        <li class="list-group-item">Harga laptop :  <?=$harga?></li> 
                     </ul>
                 </div>
                 <div class="card-footer">
@@ -65,11 +65,11 @@
                 <div class="card-body">
                 <h5 class="card-title text-center">Card title</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
+                    <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
                         <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">Spesifikasi laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Stok yang tersedia : <?=$processor?></li>
-                        <li class="list-group-item">Harga laptop :  <?=$harga?></li>
+                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
+                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
+                        <li class="list-group-item">Harga laptop :  <?=$harga?></li> 
                     </ul>
                 </div>
                 <div class="card-footer">

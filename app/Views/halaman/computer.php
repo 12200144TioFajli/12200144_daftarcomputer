@@ -56,12 +56,12 @@ $vd = $vd ?: Services::validation();
                        
                         <div> 
                             <label for='txtnama' class="form-label">ram</label>
-                            <input id='txtnama' type="text" name="ram" value="<?=$data['spesifikasi'] ?? ''?>" class="form-control" />
+                            <input id='txtnama' type="text" name="ram" value="<?=$data['ram'] ?? ''?>" class="form-control" />
                         </div>
                         <?php
-                            if( $vd->getError('spesifikasi') ){?>
+                            if( $vd->getError('ram') ){?>
                                 <div class="alert alert-danger">
-                                    <?=$vd->getError('spesifikasi')?>
+                                    <?=$vd->getError('ram')?>
                                 </div>
                         <?php }
                         ?>
