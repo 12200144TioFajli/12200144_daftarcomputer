@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Filters\Auth;
+use App\Filters\AutoIn;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -20,7 +22,7 @@ class Filters extends BaseConfig
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
         'auth'     => Auth::class,
-        'autoin'   => AutoIn::class,
+        'autoin'   => AutoIn::class
     ];
     /**
      * List of filter aliases that are always

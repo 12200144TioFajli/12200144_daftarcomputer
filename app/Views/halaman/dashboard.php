@@ -2,76 +2,88 @@
 
 <?=$this->section('konten')?>
 
-    <div class="card-body">    
+    <div class="card-body">
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+            <!-- CAROUSEL -->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="<?=base_url('/assets/images/news/slide11.png')?>" class="d-block w-100 h-auto" alt="...">
+                        <div class="container"> <img class="d-block img-fluid center" src="<?=base_url('/assets/images/big/11.jpg')?>" alt="First slide"></div>
                     </div>
                     <div class="carousel-item">
-                        <img src="<?=base_url('/assets/images/news/slide3.jpg')?>" class="d-block w-100" alt="...">
+                        <div class="container"><img class="d-block img-fluid center" src="<?=base_url('/assets/images/big/10.jpg')?>" alt="Second slide"></div>
                     </div>
                     <div class="carousel-item">
-                        <img src="<?=base_url('/assets/images/news/slide4.jpg')?>" class="d-block w-100" alt="...">
+                        <div class="container"><img class="d-block img-fluid center" src="<?=base_url('/assets/images/big/15.jpg')?>" alt="Third slide"></div>
                     </div>
-                </div>
-                <li class="carousel-control-prev" type="" data-bs-target="carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </li>
-                <li class="carousel-control-next" type="" data-bs-target="carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </li>
-            </div>  
-
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+            </div>
+            <!-- End CAROUSEL -->                                              
 
             <div class="card-group mt-3">
             <div class="card ml-3">
-                <img src="../assets/images/users/22.jpg" class="card-img-top" alt="...">
+                <img src="../assets/images/riview/8.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
+                <h5 class="card-title text-center">Spesifikasi</h5>
                     <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
-                        <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
-                        <li class="list-group-item">Harga laptop :  <?=$harga?></li>                   
+                    <li class="list-group-item">Nama       : Asus Zenbook 13 OLED-UX325</li>
+                    <li class="list-group-item">Warna      : Pine Grey & Lilac Mist </li>
+                    <li class="list-group-item">RAM        : 16GB LPDDR4X on board </li>
+                    <li class="list-group-item"> Penyimpan : 512GB M.2 NVMe™ PCIe® 3.0 SSD </li>
+                    <li class="list-group-item"> Processor : Intel® Core™ i7-1165G7 </li>
+                    <li class="list-group-item">Harga      : Rp 19.299.000 </li>                   
                     </ul>
                 </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <a href="<?=base_url('/riview')?>" class="text-primary m-l-5"><button>OVERVIEW</button></a>
+                        </div>
+                    </div>
                 <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
             </div>
             <div class="card">
-                <img src="../assets/images/users/33.jpg" class="card-img-top" alt="...">
+                <img src="../assets/images/riview/5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
+                <h5 class="card-title text-center">Spesifikasi</h5>
                     <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
-                        <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
-                        <li class="list-group-item">Harga laptop :  <?=$harga?></li> 
+                    <li class="list-group-item">Nama      : MSI GS76 Stealth 11UH</li>
+                    <li class="list-group-item">Warna     : Core Black</li>
+                    <li class="list-group-item">RAM       : 32GB DDR4 3200MHZ</li>
+                    <li class="list-group-item">Penyimpan : 2TB NVMe PCIe SSD</li>
+                    <li class="list-group-item">Processor : Intel® Core™ i9 generasi ke-11</li>
+                    <li class="list-group-item">Harga     : Rp 53.999.000</li>   
                     </ul>
                 </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <a href="<?=base_url('/riview2')?>" class="text-primary m-l-5"><button>OVERVIEW</button></a>
+                        </div>
+                    </div>
                 <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
             </div>
             <div class="card">
-                <img src="../assets/images/users/44.jpg" class="card-img-top" alt="...">
+                <img src="../assets/images/riview/6.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
+                <h5 class="card-title text-center">Spesifikasi</h5>
                     <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Merek laptop : <?=$nama_merk?></li>
-                        <li class="list-group-item">Warna yang tersedia : <?=$warna?></li>
-                        <li class="list-group-item">RAM laptop : <?=$ram?></li>
-                        <li class="list-group-item"> Processor yang tersedia : <?=$processor?></li>
-                        <li class="list-group-item">Harga laptop :  <?=$harga?></li> 
-                    </ul>
+                    <li class="list-group-item">Nama      : OMEN by HP Gaming Laptop 16-c0099AX </li>
+                    <li class="list-group-item">Warna     : Mica silver cover and base, mica silver aluminum keyboard frame</li>
+                    <li class="list-group-item">RAM       : 16 GB DDR4-3200 MHz RAM (2 x 8 GB)></li>
+                    <li class="list-group-item">Penyimpan : 512 GB PCIe® NVMe™ TLC M.2 SSD</li>
+                    <li class="list-group-item">Processor : AMD Ryzen™ 9</li>
+                    <li class="list-group-item">Harga     : Rp 24.999.000</li>   
                 </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <a href="<?=base_url('/riview3')?>" class="text-primary m-l-5"><button>OVERVIEW</button></a>
+                        </div>
+                    </div>
                 <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
                 </div>

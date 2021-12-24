@@ -37,7 +37,7 @@ class Computer extends BaseController{
             ],
         ]);
 
-        $this->session->set('nama_merk', $nama);
+        $this->session->set('nama_merek', $nama);
         $this->session->set('warna', $warna);
         $this->session->set('ram', $ram);
         $this->session->set('processor', $processor);

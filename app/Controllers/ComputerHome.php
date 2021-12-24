@@ -29,4 +29,20 @@ class ComputerHome extends BaseController {
             'harga'       => $this->session->get('harga')
         ]);
     }
+
+    public function review(){
+
+        return view('/halaman/riview');
+    }
+
+    public function review2(){
+
+        return view('/halaman/riview2');
+    }
+
+    public function review3(){
+
+        return view('/halaman/riview3');
+    }
+}
 }

@@ -15,7 +15,7 @@ class SelamatDatang extends BaseController {
             'email' => $this->session->get('email'),
             'sandi' => $this->session->get('sandi'),
             'error' => $this->session->getFlashdata('error'),
-            'title' => 'Login akun'    
+            'title' => 'Login akun'
         ]);
     }
     
@@ -24,9 +24,9 @@ class SelamatDatang extends BaseController {
     }
 
     public function hal_beranda(){
-        return view('halaman/beranda', [
-            'email' => $this->session->get('email'),
-            'sandi' => $this->session->get('sandi')
-        ]);
+       return view('halaman/beranda', [
+           'email' => $this->session->get('email'),
+           'sandi' => $this->session->get('sandi')
+       ]);
     }
 }

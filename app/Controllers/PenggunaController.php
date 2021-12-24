@@ -22,7 +22,6 @@ class PenggunaController extends BaseController
             'error' => $this->session->getFlashdata('error'),
             'data'  => $data
         ]);
-
     }
 
     private function validasi(){
@@ -102,10 +101,10 @@ class PenggunaController extends BaseController
             if($r == true){
                 return redirect()->to('/pengguna-list');
             }else{
-                return redirect()->to('/pengguna/'. $id)->with('error', 'Data gagal update');
+                return redirect()->to('/pengguna'. $id)->with('error', 'Data gagal update');
             }
         }else{
-            return redirect()->to('/pengguna/',$id)->with('validator', $this->validator);
+            return redirect()->to('/pengguna',$id)->with('validator', $this->validator);
         }
         
     }
@@ -120,4 +119,4 @@ class PenggunaController extends BaseController
         }
         return $rd;
     }
-}
+}   
